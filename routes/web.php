@@ -100,6 +100,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/latihan2', function () {
+    return view('lat2');
+})->name('latihan2');
+
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
